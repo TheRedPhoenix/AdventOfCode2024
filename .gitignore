@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Cmake
+*.txt.user
+
+# build 
+build*

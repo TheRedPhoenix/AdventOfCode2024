@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "configurePresets": [
+        {
+            "name": "debug",
+            "displayName": "debug",
+            "description": "A debug preset",
+            "generator": "Ninja",
+            "binaryDir": "../build-${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "relWithDebInfo",
+            "displayName": "relWithDebInfo",
+            "description": "A release with debug info build",
+            "generator": "Ninja",
+            "binaryDir": "../build-${presetName}",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        }
+    ]
+}
